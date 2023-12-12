@@ -24,3 +24,6 @@ class Bookmark(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='дата обновления')
     complation = models.ManyToManyField('complation.Complation', verbose_name='коллекция')
+
+    def __str__(self):
+        return self.title or ''
