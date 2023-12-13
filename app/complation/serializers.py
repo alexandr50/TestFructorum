@@ -12,3 +12,9 @@ class UpdateComplationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Complation
         fields = ('title', 'short_description')
+
+
+class ComplationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Complation
+        fields = ('id',)
