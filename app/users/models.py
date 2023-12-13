@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.db.models import EmailField
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from .manager import UserManager
@@ -30,9 +31,7 @@ class CustomUser(AbstractUser):
         """
         return str(RefreshToken.for_user(self))
 
-    def __str__(self) -> str:
-        """
-        :returns:
-            [str]: Отвечает за корректное отображение объекта.
-        """
+    def __str__(self) -> EmailField:
+        return self.email
+
 
