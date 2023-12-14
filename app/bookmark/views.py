@@ -1,4 +1,5 @@
 from rest_framework import generics
+from rest_framework.response import Response
 
 from complation.models import Complation
 from .models import Bookmark
@@ -20,10 +21,17 @@ class AddBookmarkToComplationView(generics.UpdateAPIView):
     serializer_class = AddBookToComplation
 
     def update(self, request, *args, **kwargs):
-        complation_id = kwargs['pk']
-        try:
-            complation = Complation.objects.get(id=complation_id)
-        except Exception:
-            raise 'Not Found'
-        self.complation = complation
-        self.save()
+        bookmark = Bookmark.objects.get(pk=kwargs['pk'])
+        for com_id in request.data['complation']:
+            complation = Complation.objects.filter(id=com_id)
+            if complation:
+                bookmark.complation.set(complation)
+                bookmark.save()
+
+        return Response('Done')
+
+    def get_queryset(self):
+        pass
+
+    def perform_update(self, serializer):
+        pass
