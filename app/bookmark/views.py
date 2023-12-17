@@ -23,15 +23,10 @@ class AddBookmarkToComplationView(generics.UpdateAPIView):
     def update(self, request, *args, **kwargs):
         bookmark = Bookmark.objects.get(pk=kwargs['pk'])
         for com_id in request.data['complation']:
-            complation = Complation.objects.filter(id=com_id)
+            complation = Complation.objects.filter(id=com_id['id'])
             if complation:
                 bookmark.complation.set(complation)
                 bookmark.save()
 
-        return Response('Done')
+        return Response('Вы добавили заметку в коллекцию')
 
-    def get_queryset(self):
-        pass
-
-    def perform_update(self, serializer):
-        pass
