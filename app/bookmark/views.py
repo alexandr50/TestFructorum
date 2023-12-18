@@ -3,12 +3,20 @@ from rest_framework.response import Response
 
 from complation.models import Complation
 from .models import Bookmark
-from .serializers import CreateBookmarkSerializer, AddBookToComplation
+from .serializers import CreateBookmarkSerializer, AddBookToComplation, UrlSerializer
+from .services import get_content
 
 
 class CreateBookmarkView(generics.CreateAPIView):
     queryset = Bookmark.objects.all()
-    serializer_class = CreateBookmarkSerializer
+    serializer_class = UrlSerializer
+
+    def post(self, request, *args, **kwargs):
+        url = request.data['url']
+        if url:
+            content = get_content(url)
+            Bookmark.objects.create(**content)
+        return Response('Заметка создана')
 
 
 class DeleteBookmarkView(generics.DestroyAPIView):
