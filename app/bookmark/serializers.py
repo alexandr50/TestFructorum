@@ -17,3 +17,6 @@ class AddBookToComplation(serializers.ModelSerializer):
         model = Bookmark
         fields = ('complation',)
 
+
+class UrlSerializer(serializers.Serializer):
+    url = serializers.URLField()
