@@ -8,7 +8,7 @@ TestFructorum это django-rest-framework проект. Проект созда
 
     1. Установите docker
     2. Склонируйте себе проект 
-    3. Из корневой папки проекта запустите docker-compose build
+    3. Из папки  app проекта запустите docker-compose build
     4. После docker-compose up
     5.Проект доступен по адрессу http://127.0.0.1:8000
 
