@@ -36,5 +36,5 @@ class AddBookmarkToComplationView(generics.UpdateAPIView):
                 bookmark.complation.set(complation)
                 bookmark.save()
 
-        return Response('Вы добавили заметку в коллекцию')
+                return Response('Вы добавили заметку в коллекцию')
 

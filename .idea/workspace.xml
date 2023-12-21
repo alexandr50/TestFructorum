@@ -4,25 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa134da-5c69-43cb-9c3d-a1d5385057df" name="Changes" comment="add gitignore">
-      <change afterPath="$PROJECT_DIR$/.idea/TestFructorum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/manage.py" afterDir="false" />
+    <list default="true" id="ffa134da-5c69-43cb-9c3d-a1d5385057df" name="Changes" comment="create tests for complations">
+      <change beforePath="$PROJECT_DIR$/.idea/TestFructorum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestFructorum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bookmark/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bookmark/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bookmark/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bookmark/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -32,9 +32,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2ZE3oQCShHy4opg0pNKrYjhwvZL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,11 +46,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.runserver.executor": "Run",
+    "Python tests.Python tests for tests.BookmarksTestCase.test_add_to_complation.executor": "Debug",
+    "Python.runserver.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/alexandr/PycharmProjects/TestFructorum/app/manage.py",
+    "last_opened_file_path": "/home/alexandr/PycharmProjects/Project_certification/commercial_network",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -61,7 +65,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10 (TestFructorum)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -79,7 +82,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-67fca87a943a-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.11799.259" />
+        <option value="bundled-python-sdk-7a29c1521ef0-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.11799.298" />
       </set>
     </attachedChunks>
   </component>
@@ -100,11 +103,135 @@
       <option name="project" value="LOCAL" />
       <updated>1701973804176</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add db postgres">
+      <option name="closed" value="true" />
+      <created>1701977577976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701977577979</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add app complation and two andpoints">
+      <option name="closed" value="true" />
+      <created>1702209738882</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702209738882</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create logout customuser">
+      <option name="closed" value="true" />
+      <created>1702326062595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702326062595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create app bookmark and model">
+      <option name="closed" value="true" />
+      <created>1702411648798</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702411648799</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add docs">
+      <option name="closed" value="true" />
+      <created>1702500020506</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702500020506</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update requirements.txt">
+      <option name="closed" value="true" />
+      <created>1702500079794</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702500079794</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create services.py">
+      <option name="closed" value="true" />
+      <created>1702921331960</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702921331960</updated>
+    </task>
+    <task id="LOCAL-00009" summary="change settings and add env_sample">
+      <option name="closed" value="true" />
+      <created>1703014626308</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703014626308</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add README.md">
+      <option name="closed" value="true" />
+      <created>1703016042190</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703016042190</updated>
+    </task>
+    <task id="LOCAL-00011" summary="change README.md">
+      <option name="closed" value="true" />
+      <created>1703016520133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703016520133</updated>
+    </task>
+    <task id="LOCAL-00012" summary="create types_website.py">
+      <option name="closed" value="true" />
+      <created>1703090831891</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703090831891</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create tests for complations">
+      <option name="closed" value="true" />
+      <created>1703102948663</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1703102948663</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
+    <MESSAGE value="add db postgres" />
+    <MESSAGE value="add app complation and two andpoints" />
+    <MESSAGE value="create logout customuser" />
+    <MESSAGE value="create app bookmark and model" />
+    <MESSAGE value="add docs" />
+    <MESSAGE value="update requirements.txt" />
+    <MESSAGE value="create services.py" />
+    <MESSAGE value="change settings and add env_sample" />
+    <MESSAGE value="add README.md" />
+    <MESSAGE value="change README.md" />
+    <MESSAGE value="create types_website.py" />
+    <MESSAGE value="create tests for complations" />
+    <option name="LAST_COMMIT_MESSAGE" value="create tests for complations" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/users/views.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/bookmark/views.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
