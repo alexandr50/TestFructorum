@@ -16,7 +16,7 @@ TestFructorum это django-rest-framework проект. Проект созда
 
     1. Complation - Коллекция, вкотору можно добавить закладку
     2. Bookmark - Закладка с данными со страницы сайта
-    2. CustomUser - кастомная модель пользователей. Переопределен и кастомизирован также и UersManager класс (app/users/manager.py)
+    3. CustomUser - кастомная модель пользователей. Переопределен и кастомизирован также и UersManager класс (app/users/manager.py)
 
 
 Эндпоинты и документация
