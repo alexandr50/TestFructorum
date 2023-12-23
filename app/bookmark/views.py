@@ -37,4 +37,3 @@ class AddBookmarkToComplationView(generics.UpdateAPIView):
                 bookmark.save()
 
                 return Response('Вы добавили заметку в коллекцию')
-
