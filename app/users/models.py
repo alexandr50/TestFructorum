@@ -33,5 +33,3 @@ class CustomUser(AbstractUser):
 
     def __str__(self) -> EmailField:
         return self.email
-
-

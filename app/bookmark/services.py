@@ -9,5 +9,3 @@ def get_content(url):
         if key in keys:
             correct_dict[key] = value
     return correct_dict
-
-
